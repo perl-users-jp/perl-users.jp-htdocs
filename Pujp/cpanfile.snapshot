@@ -14,6 +14,7 @@ DISTRIBUTIONS
       Amon2::Plugin::Web::NoCache undef
       Amon2::Plugin::Web::PlackSession undef
       Amon2::Plugin::Web::Streaming undef
+      Amon2::Plugin::Web::Streaming::Writer undef
       Amon2::Plugin::Web::WebSocket undef
       Amon2::Setup::Asset::Blueprint undef
       Amon2::Setup::Asset::Bootstrap undef
@@ -163,16 +164,7 @@ DISTRIBUTIONS
     pathname: D/DR/DROLSKY/Class-Load-0.20.tar.gz
     provides:
       Class::Load 0.20
-      Class::Load::Error::DieAfterBeginIsa undef
-      Class::Load::Error::DieAfterIsa undef
-      Class::Load::Error::SyntaxErrorAfterIsa undef
-      Class::Load::OK undef
       Class::Load::PP 0.20
-      Class::Load::Stash undef
-      Class::Load::Stash::Sub undef
-      Class::Load::SyntaxError undef
-      Class::Load::VersionCheck 42
-      Class::Load::VersionCheck2 42
     requirements:
       Carp 0
       Data::OptList 0
@@ -191,21 +183,6 @@ DISTRIBUTIONS
       strict 0
       version 0
       warnings 0
-  DBD-SQLite-1.40
-    pathname: I/IS/ISHIGAKI/DBD-SQLite-1.40.tar.gz
-    provides:
-      DBD::SQLite 1.40
-      DBD::SQLite::_WriteOnceHash 1.40
-      DBD::SQLite::db 1.40
-      DBD::SQLite::dr 1.40
-    requirements:
-      DBI 1.57
-      ExtUtils::MakeMaker 6.48
-      File::Spec 0.82
-      Test::Builder 0.86
-      Test::More 0.47
-      Tie::Hash 0
-      perl 5.006
   DBI-1.628
     pathname: T/TI/TIMB/DBI-1.628.tar.gz
     provides:
@@ -427,45 +404,7 @@ DISTRIBUTIONS
   Dist-CheckConflicts-0.09
     pathname: D/DO/DOY/Dist-CheckConflicts-0.09.tar.gz
     provides:
-      Bar 0.02
-      Bar::Bar 0.01
-      Bar::Bar::Bad 0.01
-      Bar::Bar::Good 0.02
-      Bar::Baz 0.02
-      Bar::Baz::Bad 0.01
-      Bar::Baz::Good 0.02
-      Bar::Conflicts undef
-      Bar::Conflicts2 undef
-      Bar::Conflicts3 undef
-      Bar::Conflicts::Bad undef
-      Bar::Conflicts::Bad2 undef
-      Bar::Conflicts::Bad3 undef
-      Bar::Conflicts::Good undef
-      Bar::Conflicts::Good2 undef
-      Bar::Conflicts::Good3 undef
-      Bar::Foo 0.01
-      Bar::Foo::Bad 0.01
-      Bar::Foo::Good 0.02
-      Bar::Quux 0.02
-      Bar::Quux::Bad 0.01
-      Bar::Quux::Good 0.02
-      Bar::Three 0.02
-      Bar::Two 0.02
-      Broken undef
       Dist::CheckConflicts 0.09
-      Foo undef
-      Foo::Bar 0.01
-      Foo::Baz 0.02
-      Foo::Conflicts undef
-      Foo::Conflicts2 undef
-      Foo::Conflicts::Bad undef
-      Foo::Conflicts::Broken undef
-      Foo::Conflicts::Good undef
-      Foo::Foo 0.01
-      Foo::Quux 0.02
-      Foo::Thing 0.02
-      Foo::Three 0.02
-      Foo::Two 0.02
     requirements:
       Carp 0
       Exporter 0
@@ -584,10 +523,12 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Fcntl 0
       POSIX 0
+      perl 5.004
   File-Temp-0.2302
     pathname: D/DA/DAGOLDEN/File-Temp-0.2302.tar.gz
     provides:
       File::Temp 0.2302
+      File::Temp::Dir 0.2302
     requirements:
       Exporter 5.57
       ExtUtils::MakeMaker 6.17
@@ -687,7 +628,6 @@ DISTRIBUTIONS
       HTTP::Body::UrlEncoded 1.17
       HTTP::Body::XForms 1.17
       HTTP::Body::XFormsMultipart 1.17
-      PAML undef
     requirements:
       Carp 0
       Digest::MD5 0
@@ -851,7 +791,6 @@ DISTRIBUTIONS
   Module-Build-Tiny-0.028
     pathname: L/LE/LEONT/Module-Build-Tiny-0.028.tar.gz
     provides:
-      DistGen 0.01
       Module::Build::Tiny 0.028
     requirements:
       CPAN::Meta 0
@@ -876,7 +815,7 @@ DISTRIBUTIONS
   Module-Functions-2.1.3
     pathname: T/TO/TOKUHIROM/Module-Functions-2.1.3.tar.gz
     provides:
-      Module::Functions 2.001003
+      Module::Functions v2.1.3
     requirements:
       CPAN::Meta 0
       CPAN::Meta::Prereqs 0
@@ -889,10 +828,6 @@ DISTRIBUTIONS
     pathname: D/DR/DROLSKY/Module-Implementation-0.07.tar.gz
     provides:
       Module::Implementation 0.07
-      T::Impl1 undef
-      T::Impl2 undef
-      T::ImplFails1 undef
-      T::ImplFails2 undef
     requirements:
       Carp 0
       ExtUtils::MakeMaker 6.30
@@ -995,7 +930,6 @@ DISTRIBUTIONS
   Package-Stash-XS-0.28
     pathname: D/DO/DOY/Package-Stash-XS-0.28.tar.gz
     provides:
-      CompileTime undef
       Package::Stash::XS 0.28
     requirements:
       ExtUtils::MakeMaker 6.30
@@ -1149,18 +1083,6 @@ DISTRIBUTIONS
       Try::Tiny 0
       URI 1.59
       parent 0
-  Plack-Middleware-ReverseProxy-0.15
-    pathname: M/MI/MIYAGAWA/Plack-Middleware-ReverseProxy-0.15.tar.gz
-    provides:
-      Plack::Middleware::ReverseProxy 0.15
-    requirements:
-      ExtUtils::MakeMaker 6.59
-      Plack 0.9988
-      Plack::Middleware 0
-      Plack::Request 0
-      Test::More 0
-      parent 0
-      perl 5.008001
   Plack-Middleware-Session-0.20
     pathname: M/MI/MIYAGAWA/Plack-Middleware-Session-0.20.tar.gz
     provides:
